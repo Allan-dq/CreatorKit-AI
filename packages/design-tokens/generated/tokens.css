@@ -1,0 +1,83 @@
+:root {
+  --ck-color-ink: #10110F;
+  --ck-color-paper: #F4F1E9;
+  --ck-color-canvas: #E9E6DD;
+  --ck-color-white: #FFFEFA;
+  --ck-color-lime: #CBFF45;
+  --ck-color-coral: #FF6D5A;
+  --ck-color-violet: #563FCC;
+  --ck-color-success: #17682D;
+  --ck-color-warning: #A85800;
+  --ck-color-danger: #B92E2E;
+  --ck-color-muted: #5F605A;
+  --ck-color-line: rgba(16,17,15,0.16);
+  --ck-typography-family-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+  --ck-typography-family-display: Georgia, 'Times New Roman', serif;
+  --ck-typography-family-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --ck-typography-size-xs: 0.6875rem;
+  --ck-typography-size-sm: 0.8125rem;
+  --ck-typography-size-md: 0.9375rem;
+  --ck-typography-size-lg: 1.125rem;
+  --ck-typography-size-xl: 1.5rem;
+  --ck-typography-size-2xl: 2.25rem;
+  --ck-typography-size-display: clamp(3.5rem, 8vw, 7rem);
+  --ck-typography-weight-regular: 400;
+  --ck-typography-weight-medium: 580;
+  --ck-typography-weight-bold: 760;
+  --ck-typography-weight-black: 850;
+  --ck-typography-lineHeight-tight: 0.92;
+  --ck-typography-lineHeight-heading: 1.08;
+  --ck-typography-lineHeight-body: 1.55;
+  --ck-typography-tracking-tight: -0.055em;
+  --ck-typography-tracking-normal: -0.01em;
+  --ck-typography-tracking-wide: 0.12em;
+  --ck-spacing-0: 0;
+  --ck-spacing-1: 0.25rem;
+  --ck-spacing-2: 0.5rem;
+  --ck-spacing-3: 0.75rem;
+  --ck-spacing-4: 1rem;
+  --ck-spacing-5: 1.25rem;
+  --ck-spacing-6: 1.5rem;
+  --ck-spacing-8: 2rem;
+  --ck-spacing-10: 2.5rem;
+  --ck-spacing-12: 3rem;
+  --ck-spacing-16: 4rem;
+  --ck-spacing-20: 5rem;
+  --ck-spacing-24: 6rem;
+  --ck-radius-xs: 4px;
+  --ck-radius-sm: 8px;
+  --ck-radius-md: 12px;
+  --ck-radius-lg: 18px;
+  --ck-radius-xl: 28px;
+  --ck-radius-pill: 999px;
+  --ck-shadow-sm: 0 1px 2px rgba(16,17,15,.08);
+  --ck-shadow-md: 0 12px 32px rgba(16,17,15,.12);
+  --ck-shadow-offset: 5px 5px 0 #CBFF45;
+  --ck-shadow-focus: 0 0 0 3px rgba(117,92,255,.35);
+  --ck-motion-duration-fast: 120ms;
+  --ck-motion-duration-normal: 220ms;
+  --ck-motion-duration-slow: 420ms;
+  --ck-motion-easing-standard: cubic-bezier(.2,.8,.2,1);
+  --ck-motion-easing-expressive: cubic-bezier(.18,.9,.22,1.2);
+  --ck-motion-constraint: Disable non-essential transforms when prefers-reduced-motion is active;
+  --ck-breakpoint-mobile: 30rem;
+  --ck-breakpoint-tablet: 48rem;
+  --ck-breakpoint-desktop: 64rem;
+  --ck-breakpoint-wide: 90rem;
+  --ck-state-hoverOpacity: 0.88;
+  --ck-state-disabledOpacity: 0.46;
+  --ck-state-focusRing: 0 0 0 3px rgba(117,92,255,.35);
+  --ck-state-selectedOutline: 2px solid #10110F;
+}
+[data-theme='light'] {
+  --ck-theme-background: #F4F1E9;
+  --ck-theme-surface: #FFFEFA;
+  --ck-theme-text: #10110F;
+}
+[data-theme='dark'] {
+  --ck-theme-background: #11120F;
+  --ck-theme-surface: #1D1E19;
+  --ck-theme-text: #F4F1E9;
+  --ck-theme-line: rgba(244,241,233,.18);
+}
+@media (prefers-reduced-motion: reduce) { :root { --ck-motion-duration-fast: 0ms; --ck-motion-duration-normal: 0ms; --ck-motion-duration-slow: 0ms; } }

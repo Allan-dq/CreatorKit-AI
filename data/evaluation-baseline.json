@@ -1,0 +1,13 @@
+{
+  "measuredAt": "2026-08-21T22:59:10Z",
+  "unitTests": "17 / 17 passed",
+  "integrationTests": "1 / 1 passed",
+  "mcpSmokeTests": "5 / 5 passed",
+  "accessibilityViolations": 0,
+  "keyboardChecks": "2 / 2 passed",
+  "responsiveChecks": "18 / 18 passed",
+  "visualRegression": "1 / 1 passed",
+  "productionHtml": "3 / 3 passed",
+  "productionBuild": "Pass",
+  "storybookBuild": "Pass"
+}

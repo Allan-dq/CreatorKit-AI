@@ -1,0 +1,36 @@
+.asset-visual--seed-1 {
+  filter: hue-rotate(22deg);
+}
+
+.asset-visual--seed-2 {
+  filter: hue-rotate(-28deg);
+}
+
+.asset-history .asset-decision-actions,
+.asset-history .asset-secondary-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.asset-history .ck-button {
+  justify-content: center;
+}
+
+/* Contrast-safe text treatment for compact evidence UI. */
+.agent-row {
+  opacity: 1;
+}
+
+.problem-list article > span {
+  color: #a8392e;
+}
+
+.outcomes-grid p,
+.outcomes-caveat {
+  color: #f0eeff;
+}
+
+.decision-render > span {
+  color: #b9b8b0 !important;
+}

@@ -1,0 +1,7 @@
+services:
+  creator-kit-ai:
+    build: .
+    environment:
+      CREATOR_KIT_AI_PROVIDER: mock
+    ports:
+      - "3000:3000"
