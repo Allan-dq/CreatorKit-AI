@@ -2,7 +2,7 @@
 
 **Agentic Design System & Generative Asset Studio**
 
-CreatorKit AI is a portfolio-grade internal design tool for creator and short-form content teams. A brief moves through seven schema-governed specialist agents, becomes a deterministic interactive prototype, receives original asset direction, and ends as inspectable evaluation evidence—without executing model-generated JavaScript.
+CreatorKit AI is an internal design tool for creator and short-form content teams. A brief moves through seven schema-governed specialist agents, becomes a deterministic interactive prototype, receives original asset direction, and ends as inspectable evaluation evidence—without executing model-generated JavaScript.
 
 The default experience is fully local and deterministic. No API key is required.
 
@@ -199,8 +199,8 @@ Available tools: `list_design_tokens`, `list_components`, `get_component_contrac
 - Run a consented creator-team preference study and populate held-out ranking metrics.
 - Add cross-browser visual baselines and hosted CI artifacts.
 
-## Portfolio narrative
+## Further reading
 
-Read [docs/case-study.md](docs/case-study.md), [docs/ai-assisted-development.md](docs/ai-assisted-development.md), and [docs/resume-bullets.md](docs/resume-bullets.md). The in-product `/case-study` page presents the same story as an interactive portfolio surface.
+Read [docs/case-study.md](docs/case-study.md) and [docs/ai-assisted-development.md](docs/ai-assisted-development.md). The in-product `/case-study` page presents the same story interactively.
 
 This project uses an original identity and assets. It does not copy TikTok UI, branding, logos, or proprietary product patterns.
