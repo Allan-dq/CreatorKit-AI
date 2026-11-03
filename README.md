@@ -204,3 +204,7 @@ Available tools: `list_design_tokens`, `list_components`, `get_component_contrac
 Read [docs/case-study.md](docs/case-study.md) and [docs/ai-assisted-development.md](docs/ai-assisted-development.md). The in-product `/case-study` page presents the same story interactively.
 
 This project uses an original identity and assets. It does not copy any existing product's UI, branding, logos, or proprietary patterns.
+
+## License
+
+Released under the [MIT License](LICENSE).
