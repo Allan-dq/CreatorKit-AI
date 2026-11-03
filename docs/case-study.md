@@ -10,7 +10,7 @@ Treat generative design as a governed compiler pipeline, not a chatbot canvas. A
 
 ## What was built
 
-CreatorKit provides six portfolio-ready product pages and a complete brief-to-evidence journey. Four sample briefs feed seven specialist roles. The composer emits a validated `PrototypeSpec` using five approved component blocks in the reference flow. The renderer turns that data into an interactive mobile prototype, while the art director creates traceable asset requests and two reviewable variants.
+CreatorKit provides six product pages and a complete brief-to-evidence journey. Four sample briefs feed seven specialist roles. The composer emits a validated `PrototypeSpec` using five approved component blocks in the reference flow. The renderer turns that data into an interactive mobile prototype, while the art director creates traceable asset requests and two reviewable variants.
 
 The user can inspect every agent handoff, approve/reject/regenerate an asset, compare variants, record a six-dimension human label, run validation, and export the full artifact package.
 
@@ -34,7 +34,7 @@ Human labels, AI critiques, and synthetic assets are distinct types and visible 
 
 ## Design direction
 
-The original Signal Garden identity uses warm editorial surfaces, dense evidence typography, lime signals, coral urgency, orbital linework, and a contrast-safe violet. It deliberately avoids the visual language, logos, and proprietary interface patterns of the target employer.
+The original Signal Garden identity uses warm editorial surfaces, dense evidence typography, lime signals, coral urgency, orbital linework, and a contrast-safe violet. It deliberately avoids the visual language, logos, and proprietary interface patterns of existing creator platforms.
 
 ## Outcomes
 
@@ -45,7 +45,7 @@ Measured technical outcomes from the completed local project:
 - 7 agent roles produce 8 trace events in the reference one-revision flow.
 - 4 domain-specific sample briefs generate valid prototypes and at least 2 asset requests each.
 - 17/17 Vitest checks and 12/12 Playwright checks pass.
-- axe reports 0 violations across the six required pages and completed primary journey.
+- axe reports 0 violations across the six product pages and completed primary journey.
 - 18/18 route×viewport overflow checks and 1/1 visual baseline pass.
 - The reference spec measures 100% token-root compliance and 0 unknown components.
 

@@ -16,8 +16,8 @@ The generated social asset used an original prompt centered on Signal Garden’s
 
 ## Human judgment that remained essential
 
-- Choosing an original visual direction rather than imitating the target employer.
-- Turning a broad role description into a credible internal-tool workflow.
+- Choosing an original visual direction rather than imitating an existing product.
+- Turning a broad product brief into a credible internal-tool workflow.
 - Deciding that model output must be a spec instead of arbitrary code.
 - Setting the two-revision ceiling and separating human, AI, and synthetic provenance.
 - Adjusting compact-text colors after real axe measurements.

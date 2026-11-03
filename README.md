@@ -154,7 +154,7 @@ pnpm screenshots
 | Vitest | 17/17 passed across 6 files |
 | MCP tool smoke tests | 5/5 passed |
 | Browser E2E | 12/12 passed |
-| axe-core | 0 violations across all 6 required pages and the completed main flow |
+| axe-core | 0 violations across all 6 product pages and the completed main flow |
 | Keyboard behavior | 2/2 checks passed (component + real-browser tab navigation) |
 | Responsive layout | 18/18 route×viewport overflow checks passed |
 | Visual regression | 1/1 Chromium reference passed |
@@ -203,4 +203,4 @@ Available tools: `list_design_tokens`, `list_components`, `get_component_contrac
 
 Read [docs/case-study.md](docs/case-study.md) and [docs/ai-assisted-development.md](docs/ai-assisted-development.md). The in-product `/case-study` page presents the same story interactively.
 
-This project uses an original identity and assets. It does not copy TikTok UI, branding, logos, or proprietary product patterns.
+This project uses an original identity and assets. It does not copy any existing product's UI, branding, logos, or proprietary patterns.

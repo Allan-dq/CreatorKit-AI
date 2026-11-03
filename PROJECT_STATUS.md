@@ -4,7 +4,7 @@ Last updated: 2026-08-21
 
 ## Completed milestones
 
-- [x] Responsive product shell and all six required pages
+- [x] Responsive product shell and all six product pages
 - [x] Four sample briefs and complete mock brief-to-prototype journey
 - [x] 76-token light/dark Signal Garden compiler and manifest
 - [x] 14 reusable components, contracts, and Storybook stories
@@ -24,7 +24,7 @@ Last updated: 2026-08-21
 
 - Vitest: 17/17 passing across 6 files
 - Playwright: 12/12 passing
-- axe-core: 0 violations across 6 required pages and the completed journey
+- axe-core: 0 violations across 6 product pages and the completed journey
 - Keyboard behavior: 2/2 checks
 - Responsive: 18/18 route×viewport overflow checks
 - Visual regression: 1/1 Chromium baseline

@@ -58,7 +58,7 @@ Secrets remain server-side. `.env*` is ignored except the blank `.env.example`; 
 - Exports are explicit downloads: artifact JSON, asset JSON, evaluation Markdown, and human-label JSONL.
 - Synthetic critiques and demo assets carry explicit provenance and never enter the human-label count.
 
-Local storage keeps the portfolio runnable with no services. A production collaboration version would replace this layer with SQLite or a service database while preserving the same schemas.
+Local storage keeps the demo runnable with no services. A production collaboration version would replace this layer with SQLite or a service database while preserving the same schemas.
 
 ## Rendering and runtime
 

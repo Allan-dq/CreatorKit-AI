@@ -9,7 +9,7 @@ CreatorKit separates automated evidence, human labels, AI critique, synthetic fi
 | Schema validity | Zod parses briefs, plans, specs, assets, critiques, labels, evaluations, and traces | Vitest + evaluation result |
 | Token compliance | Every `tokenRefs` root checked against governed categories | 15/15 refs in the reference fixture |
 | Component usage | Spec blocks checked against the contract map | 5 valid / 0 invalid in the fixture |
-| Accessibility | axe-core on all six required pages and completed Studio flow | 0 detected violations in the latest suite |
+| Accessibility | axe-core on all six product pages and completed Studio flow | 0 detected violations in the latest suite |
 | Keyboard | Component test and real-browser tab navigation | 2/2 checks |
 | Responsive | Six routes × three viewports checked for horizontal overflow | 18/18 checks |
 | Visual regression | Chromium full-page reference for Studio | 1/1 baseline |
