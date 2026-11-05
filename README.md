@@ -8,6 +8,20 @@ The default experience is fully local and deterministic. No API key is required.
 
 ![CreatorKit AI landing page](docs/screenshots/landing-desktop.png)
 
+## Results at a glance
+
+Measured in the latest local run (2026-08-21); the full table is under [Testing](#testing).
+
+| Check | Result |
+| --- | --- |
+| Unit tests (Vitest) | 17/17 passed |
+| MCP tool smoke tests | 5/5 passed |
+| Browser end-to-end tests | 12/12 passed |
+| Accessibility (axe-core) | 0 violations across all 6 product pages |
+| Token compliance of generated specs | 15/15 references, 100% |
+
+Run it locally (Node.js `>=22.13` and pnpm): `pnpm install && pnpm tokens:build && pnpm dev`, then open http://localhost:3000.
+
 ## Product problem
 
 AI can make UI quickly, but ungoverned output drifts from tokens, invents components, hides decisions, and turns visual review into anecdote. CreatorKit treats generation as a design-engineering pipeline: structured brief → machine-readable system → validated spec → whitelisted renderer → human and automated evidence.
