@@ -1,5 +1,7 @@
 # CreatorKit AI
 
+[![CI](https://github.com/Allan-dq/CreatorKit-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/Allan-dq/CreatorKit-AI/actions/workflows/ci.yml)
+
 **Agentic Design System & Generative Asset Studio**
 
 CreatorKit AI is an internal design tool for creator and short-form content teams. A brief moves through seven schema-governed specialist agents, becomes a deterministic interactive prototype, receives original asset direction, and ends as inspectable evaluation evidence—without executing model-generated JavaScript.
@@ -10,7 +12,7 @@ The default experience is fully local and deterministic. No API key is required.
 
 ## Results at a glance
 
-Measured in the latest local run (2026-08-21); the full table is under [Testing](#testing).
+[GitHub Actions](https://github.com/Allan-dq/CreatorKit-AI/actions/workflows/ci.yml) re-runs the four test rows on every push (Ubuntu, Chromium). Token compliance comes from evaluating the reference flow's spec and, like the full table under [Testing](#testing), was measured locally on 2026-08-21.
 
 | Check | Result |
 | --- | --- |
@@ -161,6 +163,8 @@ pnpm build
 pnpm screenshots
 ```
 
+[CI](.github/workflows/ci.yml) runs `pnpm validate`, a check that the committed token files match the token source, the production build, `pnpm test:html`, the Storybook build and the full Playwright suite on Ubuntu with Chromium. Visual baselines are per platform: `tests/e2e/visual.spec.ts-snapshots/` holds the macOS reference and a Linux reference generated on the CI runner.
+
 ### Latest local evidence — 2026-08-21
 
 | Evidence | Measured result |
@@ -211,7 +215,7 @@ Available tools: `list_design_tokens`, `list_components`, `get_component_contrac
 - Add SQLite-backed multi-run history and dataset versioning.
 - Connect a licensed image-generation provider behind the existing `AssetRequest` contract.
 - Run a consented creator-team preference study and populate held-out ranking metrics.
-- Add cross-browser visual baselines and hosted CI artifacts.
+- Add cross-browser visual baselines; CI covers Chromium only.
 
 ## Further reading
 
