@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: Typecheck, lint, Vitest and builds
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 11.19.0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install
+        run: pnpm install --frozen-lockfile
+      - name: Tokens, strict TypeScript, ESLint and Vitest (unit, component, integration, MCP)
+        run: pnpm validate
+      - name: Committed token files match the token source
+        run: git diff --exit-code -- packages/design-tokens/generated
+      - name: Production build
+        run: pnpm build
+      - name: Production-rendered routes
+        run: pnpm test:html
+      - name: Storybook build
+        run: pnpm storybook:build
+
+  e2e:
+    name: Browser journey, accessibility, responsive and visual tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 11.19.0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install
+        run: pnpm install --frozen-lockfile
+      - name: Install Chromium
+        run: pnpm exec playwright install --with-deps chromium
+      - name: Playwright
+        run: pnpm test:e2e
+      - name: Upload Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: playwright-report
+          path: |
+            playwright-report/
+            test-results/
+            tests/e2e/visual.spec.ts-snapshots/
+          retention-days: 7
